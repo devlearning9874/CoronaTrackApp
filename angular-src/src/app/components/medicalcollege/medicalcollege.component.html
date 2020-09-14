@@ -1,0 +1,27 @@
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">State Name</th>
+    <th scope="col">Institue Name</th>
+    <th scope="col">City</th>
+    <th scope="col">Type</th>
+    <th scope="col">Admission Capacity</th>
+    <th scope="col">Hospitals Beds</th>
+    
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let country of medicalcollege; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ country.state}}</td>
+    <td>{{ country.name}}</td>
+    <td>{{ country.city}}</td>
+    <td>{{ country.ownership }}</td>
+    <td>{{ country.admissionCapacity}}</td>
+    <td>{{ country.hospitalBeds }}</td>
+    
+  </tr>
+  </tbody>
+</table>

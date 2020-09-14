@@ -1,0 +1,29 @@
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">State Name</th>
+    <th scope="col">Rural Hospitals</th>
+    <th scope="col">Rural Beds</th>
+    <th scope="col">Urban Hospitals</th>
+    <th scope="col">Urban Beds</th>
+    <th scope="col">Total Hospitals</th>
+    <th scope="col">Total Beds(State Wise)</th>
+    
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let country of hospitalbeds; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ country.state }}</td>
+    <td>{{ country.ruralHospitals }}</td>
+    <td>{{ country.ruralBeds }}</td>
+    <td>{{ country.urbanHospitals}}</td>
+    <td>{{ country.urbanBeds}}</td>
+    <td>{{ country.totalHospitals}}</td>
+    <td>{{ country.totalBeds }}</td>
+    
+  </tr>
+  </tbody>
+</table>

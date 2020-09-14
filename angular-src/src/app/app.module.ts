@@ -6,58 +6,36 @@ import {RouterModule, Routes} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ProfileComponent } from './components/profile/profile.component';
-
-import { ValidateService } from './services/validate.service';
-import { AuthService } from './services/auth.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
-import { AuthGuard } from './guards/auth.guard';
-import { MathComponent } from './components/math/math.component';
-import { PhysicsComponent } from './components/physics/physics.component';
-import { ChemistryComponent } from './components/chemistry/chemistry.component';
-import { EventsComponent } from './components/events/events.component';
 import { EventService } from './services/event.service';
 import { ContactHelplineComponent } from './components/contact-helpline/contact-helpline.component';
 import { NotificationAdvisoryComponent } from './components/notification-advisory/notification-advisory.component';
 import { HospitalDashboardComponent } from './components/hospital-dashboard/hospital-dashboard.component';
 import { CompareCasesComponent } from './components/compare-cases/compare-cases.component';
+import { MedicalcollegeComponent } from './components/medicalcollege/medicalcollege.component';
+import { HospitalbedsComponent } from './components/hospitalbeds/hospitalbeds.component';
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
-  {path:'register', component: RegisterComponent},
-  {path:'login', component: LoginComponent},
-  {path:'events', component: EventsComponent},
-  {path:'physics', component: PhysicsComponent},
-  {path:'chemistry', component: ChemistryComponent},
-  {path:'math', component: MathComponent},
+  {path:'medicalcollege', component: MedicalcollegeComponent},
+  {path:'hospitalbeds', component: HospitalbedsComponent},
   {path:'contact-helpline', component: ContactHelplineComponent},
   {path:'notification-advisory', component: NotificationAdvisoryComponent},
   {path:'hospital-dashboard', component: HospitalDashboardComponent},
   {path:'compare-cases', component: CompareCasesComponent},
-  {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
-  {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent,
-    RegisterComponent,
     HomeComponent,
-    DashboardComponent,
-    ProfileComponent,
-    MathComponent,
-    PhysicsComponent,
-    ChemistryComponent,
-    EventsComponent,
     ContactHelplineComponent,
     NotificationAdvisoryComponent,
     HospitalDashboardComponent,
-    CompareCasesComponent
+    CompareCasesComponent,
+    MedicalcollegeComponent,
+    HospitalbedsComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +45,7 @@ const appRoutes: Routes =  [
     HttpClientModule,
     FlashMessagesModule.forRoot()
   ],
-  providers: [ValidateService, AuthService, AuthGuard],
+  providers: [EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
