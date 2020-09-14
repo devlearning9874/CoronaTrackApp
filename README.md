@@ -1,11 +1,22 @@
-# MEANauthapp
+# Corona Track Application
 
-Complete MEAN stack application with authentication using json web tokens
+Complete MEAN stack Corona Track Application 
 
 ### Version
 1.0.0
+### Technology Used
+1. Mongodb Database
+2. Express Server
+3. Angular Js
+4. Node
 
+### App Architecture
+HTTP Request => API Call => Component Routing(Services) => Render
 ## Usage
+1) Contact & Helpline Information
+2) Notification & Advisory from the government Information.
+3) Hospital Dashboard
+4) Comparison of daily sample tests and confirmed cases of the patients.
 
 
 ### Installation
@@ -18,7 +29,7 @@ $ npm install
 Run app
 
 ```sh
-$ npm start
+$ node app.js
 ```
 
-### Screenshots in Wiki: https://github.com/tomcatbuzz/meanauthapp/wiki
+### Screenshots in Wiki: https://github.com/devlearning9874/CoronaTrackApp
