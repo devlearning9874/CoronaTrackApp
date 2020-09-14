@@ -33,3 +33,4 @@ $ node app.js
 ```
 
 ### Screenshots in Wiki: https://github.com/devlearning9874/CoronaTrackApp
+     ### Deployment Link:    https://quiet-plateau-73634.herokuapp.com/
