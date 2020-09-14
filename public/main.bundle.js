@@ -100,12 +100,20 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_physics_physics_component__ = __webpack_require__("../../../../../src/app/components/physics/physics.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_chemistry_chemistry_component__ = __webpack_require__("../../../../../src/app/components/chemistry/chemistry.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_events_events_component__ = __webpack_require__("../../../../../src/app/components/events/events.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_contact_helpline_contact_helpline_component__ = __webpack_require__("../../../../../src/app/components/contact-helpline/contact-helpline.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_notification_advisory_notification_advisory_component__ = __webpack_require__("../../../../../src/app/components/notification-advisory/notification-advisory.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_hospital_dashboard_hospital_dashboard_component__ = __webpack_require__("../../../../../src/app/components/hospital-dashboard/hospital-dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_compare_cases_compare_cases_component__ = __webpack_require__("../../../../../src/app/components/compare-cases/compare-cases.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -135,6 +143,10 @@ var appRoutes = [
     { path: 'physics', component: __WEBPACK_IMPORTED_MODULE_18__components_physics_physics_component__["a" /* PhysicsComponent */] },
     { path: 'chemistry', component: __WEBPACK_IMPORTED_MODULE_19__components_chemistry_chemistry_component__["a" /* ChemistryComponent */] },
     { path: 'math', component: __WEBPACK_IMPORTED_MODULE_17__components_math_math_component__["a" /* MathComponent */] },
+    { path: 'contact-helpline', component: __WEBPACK_IMPORTED_MODULE_21__components_contact_helpline_contact_helpline_component__["a" /* ContactHelplineComponent */] },
+    { path: 'notification-advisory', component: __WEBPACK_IMPORTED_MODULE_22__components_notification_advisory_notification_advisory_component__["a" /* NotificationAdvisoryComponent */] },
+    { path: 'hospital-dashboard', component: __WEBPACK_IMPORTED_MODULE_23__components_hospital_dashboard_hospital_dashboard_component__["a" /* HospitalDashboardComponent */] },
+    { path: 'compare-cases', component: __WEBPACK_IMPORTED_MODULE_24__components_compare_cases_compare_cases_component__["a" /* CompareCasesComponent */] },
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_11__components_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_16__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_12__components_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_16__guards_auth_guard__["a" /* AuthGuard */]] }
 ];
@@ -154,7 +166,11 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_17__components_math_math_component__["a" /* MathComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__components_physics_physics_component__["a" /* PhysicsComponent */],
                 __WEBPACK_IMPORTED_MODULE_19__components_chemistry_chemistry_component__["a" /* ChemistryComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__components_events_events_component__["a" /* EventsComponent */]
+                __WEBPACK_IMPORTED_MODULE_20__components_events_events_component__["a" /* EventsComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__components_contact_helpline_contact_helpline_component__["a" /* ContactHelplineComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__components_notification_advisory_notification_advisory_component__["a" /* NotificationAdvisoryComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__components_hospital_dashboard_hospital_dashboard_component__["a" /* HospitalDashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__components_compare_cases_compare_cases_component__["a" /* CompareCasesComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -230,6 +246,143 @@ var ChemistryComponent = (function () {
         __metadata("design:paramtypes", [])
     ], ChemistryComponent);
     return ChemistryComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/compare-cases/compare-cases.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/compare-cases/compare-cases.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  compare-cases works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/compare-cases/compare-cases.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompareCasesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CompareCasesComponent = (function () {
+    function CompareCasesComponent() {
+    }
+    CompareCasesComponent.prototype.ngOnInit = function () {
+    };
+    CompareCasesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-compare-cases',
+            template: __webpack_require__("../../../../../src/app/components/compare-cases/compare-cases.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/compare-cases/compare-cases.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CompareCasesComponent);
+    return CompareCasesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/contact-helpline/contact-helpline.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/contact-helpline/contact-helpline.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>Table is just a mapping of objects to table rows with <code>ngFor</code></p>\n\n<table class=\"table table-striped\">\n  <thead>\n  <tr>\n    <th scope=\"col\">#</th>\n    <th scope=\"col\">State Name</th>\n    <th scope=\"col\">Helpline Number</th>\n    \n  </tr>\n  </thead>\n  <tbody>\n  <tr *ngFor=\"let country of contact; index as i\">\n    <th scope=\"row\">{{ i + 1 }}</th>\n    <td>\n      \n      {{ country.loc }}\n    </td>\n    <td>{{ country.number }}</td>\n    \n  </tr>\n  </tbody>\n</table>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/contact-helpline/contact-helpline.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactHelplineComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ContactHelplineComponent = (function () {
+    function ContactHelplineComponent(authService, router) {
+        this.authService = authService;
+        this.router = router;
+        this.contact = [];
+    }
+    ContactHelplineComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.authService.getPhysics().subscribe(function (res) {
+            _this.contact = res,
+                console.log(_this.contact);
+        }, function (err) {
+            console.log(err);
+            return false;
+        });
+    };
+    ContactHelplineComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-contact-helpline',
+            template: __webpack_require__("../../../../../src/app/components/contact-helpline/contact-helpline.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/contact-helpline/contact-helpline.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
+    ], ContactHelplineComponent);
+    return ContactHelplineComponent;
 }());
 
 
@@ -379,7 +532,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\n  <h1>MEAN Authentication App</h1>\n  <p class=\"lead\">Welcome to our custom MEAN authentication application built from scratch </p>\n  <div>\n    <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a> <a class=\"btn btn-dark\" [routerLink]=\"['/login']\">Login</a>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h3>Express Backend</h3>\n    <p>A rock solid Node.js/Express server using Mongoose to organize models and query the database</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>Angular-CLI</h3>\n    <p>Angular-CLI to generate components, services and more. Local dev server and easy compilation</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>JWT Tokens</h3>\n    <p>Full featured authentication using JSON web tokens. Login and store user data</p>\n  </div>\n</div>\n\n<div class=\"row mt-5\">\n<div class=\"col-md-4 mb-3\" >\n\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Physics</h5>\n        <p class=\"card-text\">Jai HO</p>\n        <a  class=\"btn btn-primary\" [routerLink]=\"['/physics']\">Start Test</a>\n      </div>\n      <div class=\"card-footer text-muted\">\n        Jai mata Di\n      </div>\n    </div>\n  </div>\n<div class=\"col-md-4 mb-3\" >\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Physics</h5>\n        <p class=\"card-text\">Jai HO</p>\n        <a  class=\"btn btn-primary\" [routerLink]=\"['/chemistry']\">Start Test</a>\n      </div>\n      <div class=\"card-footer text-muted\">\n        Jai mata Di\n      </div>\n    </div>\n  </div>\n    <div class=\"col-md-4 mb-3\" >\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Physics</h5>\n        <p class=\"card-text\">Jai HO</p>\n        <a  class=\"btn btn-primary\" [routerLink]=\"['/math']\">Start Test</a>\n      </div>\n      <div class=\"card-footer text-muted\">\n        Jai mata Di\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"jumbotron text-center\">\n  <h1>Corona Track App</h1>\n  <p class=\"lead\">Get contact & Helpline Info, Notification & Advisory, Hospital Dashboard, Compare cases. </p>\n  \n</div>\n\n\n<div class=\"row mt-5\">\n  <div class=\"col-md-4 mb-3\" >\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Contact Helpline</h5>\n        <p class=\"card-text\">Jai HO</p>\n        <a  class=\"btn btn-primary\" [routerLink]=\"['/contact-helpline']\">Start Test</a>\n      </div>\n      <div class=\"card-footer text-muted\">\n        Jai mata Di\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4 mb-3\" >\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Notification Advisory</h5>\n        <p class=\"card-text\">Jai HO</p>\n        <a  class=\"btn btn-primary\" [routerLink]=\"['/notification-advisory']\">Start Test</a>\n      </div>\n      <div class=\"card-footer text-muted\">\n        Jai mata Di\n      </div>\n    </div>\n  </div>\n    <div class=\"col-md-4 mb-3\" >\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Hospital Dashboard</h5>\n        <p class=\"card-text\">Jai HO</p>\n        <a  class=\"btn btn-primary\" [routerLink]=\"['/hospital-dashboard']\">Start Test</a>\n      </div>\n      <div class=\"card-footer text-muted\">\n        Jai mata Di\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4 mb-3\" >\n    <div class=\"card text-center\">\n      <div class=\"card-body\">\n        <h5 class=\"card-title\">Compare Cases</h5>\n        <p class=\"card-text\">Jai HO</p>\n        <a  class=\"btn btn-primary\" [routerLink]=\"['/compare-cases']\">Start Test</a>\n      </div>\n      <div class=\"card-footer text-muted\">\n        Jai mata Di\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -414,6 +567,67 @@ var HomeComponent = (function () {
         __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/hospital-dashboard/hospital-dashboard.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/hospital-dashboard/hospital-dashboard.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  hospital-dashboard works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/hospital-dashboard/hospital-dashboard.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HospitalDashboardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HospitalDashboardComponent = (function () {
+    function HospitalDashboardComponent() {
+    }
+    HospitalDashboardComponent.prototype.ngOnInit = function () {
+    };
+    HospitalDashboardComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-hospital-dashboard',
+            template: __webpack_require__("../../../../../src/app/components/hospital-dashboard/hospital-dashboard.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/hospital-dashboard/hospital-dashboard.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HospitalDashboardComponent);
+    return HospitalDashboardComponent;
 }());
 
 
@@ -593,7 +807,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark bg-dark fixed-top\">\n      <a class=\"navbar-brand\" href=\"#\">MEAN Auth App</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n\n      <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\n        <ul class=\"navbar-nav mr-auto\">\n          <li class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/']\">Home <span></span></a>\n          </li>\n        </ul>\n        <ul class=\"navbar-nav ml-auto\">\n          <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Dashboard </a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/profile']\">Profile </a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/login']\">Login </a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/register']\">Register</a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\"><a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">Logout</a>\n          </li>\n        </ul>\n      </div>\n    </nav>\n"
+module.exports = "<nav class=\"navbar navbar-expand-md navbar-dark bg-dark fixed-top\">\n      <a class=\"navbar-brand\" href=\"#\">Corona Track App</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n\n      <!-- <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\n        <ul class=\"navbar-nav mr-auto\">\n          <li class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/']\">Home <span></span></a>\n          </li>\n        </ul>\n        <ul class=\"navbar-nav ml-auto\">\n          <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Dashboard </a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/profile']\">Profile </a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/login']\">Login </a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"!authService.loggedIn()\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions] = \"{exact:true}\">\n            <a class=\"nav-link\" [routerLink]=\"['/register']\">Register</a>\n          </li>\n          <li class=\"nav-item\" *ngIf=\"authService.loggedIn()\"><a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">Logout</a>\n          </li>\n        </ul>\n      </div> -->\n    </nav>\n"
 
 /***/ }),
 
@@ -647,6 +861,82 @@ var NavbarComponent = (function () {
             __WEBPACK_IMPORTED_MODULE_3_angular2_flash_messages__["FlashMessagesService"]])
     ], NavbarComponent);
     return NavbarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/notification-advisory/notification-advisory.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/notification-advisory/notification-advisory.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>Table is just a mapping of objects to table rows with <code>ngFor</code></p>\n\n<table class=\"table table-striped\">\n  <thead>\n  <tr>\n    <th scope=\"col\">#</th>\n    <th scope=\"col\">Date</th>\n    <th scope=\"col\">Notification Title</th>\n    <th scope=\"col\">Link</th>\n    \n  </tr>\n  </thead>\n  <tbody>\n  <tr *ngFor=\"let country of notification; index as i\">\n    <th scope=\"row\">{{ i + 1 }}</th>\n    <td>\n      \n      {{ country.date }}\n    </td>\n    <td>{{ country.title }}</td>\n    <td><a href=\"{{country.link }}\">{{country.link }} </a></td>\n    \n  </tr>\n  </tbody>\n</table>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/notification-advisory/notification-advisory.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationAdvisoryComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var NotificationAdvisoryComponent = (function () {
+    function NotificationAdvisoryComponent(authService, router) {
+        this.authService = authService;
+        this.router = router;
+        this.notification = [];
+    }
+    NotificationAdvisoryComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.authService.getNotification().subscribe(function (res) {
+            _this.notification = res,
+                console.log(_this.notification);
+        }, function (err) {
+            console.log(err);
+            return false;
+        });
+    };
+    NotificationAdvisoryComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-notification-advisory',
+            template: __webpack_require__("../../../../../src/app/components/notification-advisory/notification-advisory.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/components/notification-advisory/notification-advisory.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
+    ], NotificationAdvisoryComponent);
+    return NotificationAdvisoryComponent;
 }());
 
 
@@ -1025,7 +1315,10 @@ var AuthService = (function () {
         localStorage.clear();
     };
     AuthService.prototype.getPhysics = function () {
-        return this.https.get('api/physics');
+        return this.https.get('api/contact-helpline');
+    };
+    AuthService.prototype.getNotification = function () {
+        return this.https.get('api/notification-advisory');
     };
     AuthService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),

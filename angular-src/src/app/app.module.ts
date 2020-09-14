@@ -21,6 +21,10 @@ import { PhysicsComponent } from './components/physics/physics.component';
 import { ChemistryComponent } from './components/chemistry/chemistry.component';
 import { EventsComponent } from './components/events/events.component';
 import { EventService } from './services/event.service';
+import { ContactHelplineComponent } from './components/contact-helpline/contact-helpline.component';
+import { NotificationAdvisoryComponent } from './components/notification-advisory/notification-advisory.component';
+import { HospitalDashboardComponent } from './components/hospital-dashboard/hospital-dashboard.component';
+import { CompareCasesComponent } from './components/compare-cases/compare-cases.component';
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
   {path:'register', component: RegisterComponent},
@@ -29,6 +33,10 @@ const appRoutes: Routes =  [
   {path:'physics', component: PhysicsComponent},
   {path:'chemistry', component: ChemistryComponent},
   {path:'math', component: MathComponent},
+  {path:'contact-helpline', component: ContactHelplineComponent},
+  {path:'notification-advisory', component: NotificationAdvisoryComponent},
+  {path:'hospital-dashboard', component: HospitalDashboardComponent},
+  {path:'compare-cases', component: CompareCasesComponent},
   {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
   {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]}
 ]
@@ -45,7 +53,11 @@ const appRoutes: Routes =  [
     MathComponent,
     PhysicsComponent,
     ChemistryComponent,
-    EventsComponent
+    EventsComponent,
+    ContactHelplineComponent,
+    NotificationAdvisoryComponent,
+    HospitalDashboardComponent,
+    CompareCasesComponent
   ],
   imports: [
     BrowserModule,

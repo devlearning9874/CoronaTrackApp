@@ -61,9 +61,12 @@ export class AuthService {
 
   getPhysics() {
     
+
     
+    return this.https.get<any>('api/contact-helpline')
+  }
+  getNotification() {
     
-    return this.https.get<any>('api/physics')
-      
+    return this.https.get<any>('api/notification-advisory')
   }
 }

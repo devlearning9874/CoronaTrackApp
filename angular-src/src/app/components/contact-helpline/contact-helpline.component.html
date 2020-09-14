@@ -1,0 +1,23 @@
+<p>Table is just a mapping of objects to table rows with <code>ngFor</code></p>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">State Name</th>
+    <th scope="col">Helpline Number</th>
+    
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let country of contact; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>
+      
+      {{ country.loc }}
+    </td>
+    <td>{{ country.number }}</td>
+    
+  </tr>
+  </tbody>
+</table>
