@@ -6,7 +6,7 @@ const setquestion = require('../models/setquestion');
 const mongoose = require("mongoose");
 
 
-const db = "mongodb+srv://scholarprobe:FkfdIPmFjekAjQFB@scholarprobe.tzmyf.mongodb.net/scholarprobe?retryWrites=true&w=majority"
+const db = "Your mongodb app url";
 
 mongoose.connect(db, err => {
     if(err){
