@@ -7,7 +7,7 @@ const Decease = require('../models/deceased');
 const mongoose = require("mongoose");
 
 
-const db = "mongodb+srv://scholarprobe:FkfdIPmFjekAjQFB@scholarprobe.tzmyf.mongodb.net/coronatrack?retryWrites=true&w=majority"
+const db = "write your uri"
 
 mongoose.connect(db, err => {
     if(err){
