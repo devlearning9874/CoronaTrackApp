@@ -5,6 +5,7 @@ const cors = require('cors');
 const app = express();
 const api = require('./routes/api');
 const beds = require('./routes/beds');
+const deceased = require('./routes/deceased');
 
 
 // Port Number
@@ -23,15 +24,16 @@ app.use(bodyParser.json());
 
 app.use("/api", api);
 app.use("/beds", beds);
+app.use("/deceased", deceased);
 
 // Index Route
-app.get('/', (req, res) => {
-  res.send('invaild endpoint');
-});
+// app.get('/', (req, res) => {
+//   res.send('invaild endpoint');
+// });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public/index.html'));
+// });
 
 // Start Server
 app.listen(port, () => {

@@ -12,20 +12,20 @@ export class EventService {
  
   getContacts() {
        
-    return this.https.get<any>('api/contact-helpline')
+    return this.https.get<any>('http://localhost:8080/api/contact-helpline')
   }
 
   getNotification() {
     
-    return this.https.get<any>('api/notification-advisory')
+    return this.https.get<any>('http://localhost:8080/api/notification-advisory')
   }
   getHospitalbeds() {
     
-    return this.https.get<any>('beds/hospital-beds')
+    return this.https.get<any>('http://localhost:8080/beds/hospital-beds')
   }
   getMedicalcollege() {
     
-    return this.https.get<any>('beds/medical-college')
+    return this.https.get<any>('http://localhost:8080/beds/medical-college')
   }
 
 
