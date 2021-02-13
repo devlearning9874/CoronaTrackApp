@@ -1,7 +1,23 @@
 const express = require("express");
 const https   = require("https");
 const router = express.Router();
+
 const fetch = require("node-fetch");
+const setquestion = require('../models/setquestion');
+
+const mongoose = require("mongoose");
+
+
+const db = "Your mongodb app url";
+
+mongoose.connect(db, err => {
+    if(err){
+        console.log("Error"+ err);
+    }else{
+        console.log("connected to mongodb");
+    }
+});
+
 
 
 router.get("/", (req, res)=>{
